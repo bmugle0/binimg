@@ -21,9 +21,9 @@ def image_to_bin(input_image):
     array = np.array(input_image)
     original_length = int(input_image.info["original_length"])
 
-    trimmed_array = array[:original_length].tobytes()
+    trimmed_array = array.flatten()[:original_length]
 
-    return trimmed_array
+    return trimmed_array.tobytes()
 
 def get_bin(input_path):
     with open(input_path, "rb") as file:

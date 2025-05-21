@@ -49,3 +49,6 @@ dist/
 
 # A little shortcut that's not neccessary
 activate_env.sh
+
+# A temporary testing folder
+tmp/
